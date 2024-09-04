@@ -1,21 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-    </head>
-        <body>
-            <header>
-                
-            </header>
 
-            <main>
-                
-            </main>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
 
-            <footer>
-                
-            </footer>
-        </body>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+    </script>
+
+<script src="https://kit.fontawesome.com/c6c6c8c28a.js" crossorigin="anonymous"></script>
+
+    <script>
+        $(function () {
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+        });
+    </script>
+
+</head>
+
+<body>
+
+    <div id="header"></div>
+
+    <main>
+        <div class="bg-hero"></div>
+        <dir class="bg-text">
+            <img src="img/Logos/curio-09-licht-paars-logo-rgb.png" alt="logo">
+            <h2>Software Development</h1>
+        </dir>
+        
+        <div class="home_main">
+            <div class="home_nav">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">
+                            <i class="fa-solid fa-house fa-lg"> Home</i>
+                        </a></li>
+
+                        <li><a href="overcurio.html">
+                            <i class="fa-solid fa-circle-info fa-lg"> Over ons</i>
+                        </a></li>
+
+                        <li><a href="leertraject.html">
+                            <i class="fa-solid fa-route fa-lg">Leertraject</i>
+                        </a></li>
+
+                        <li><a href="lessen.html">
+                            <i class="fa-solid fa-book fa-lg"> lessen</i>
+                        </a></li>
+                    </ul>
+                </nav>
+            </div>
+    
+            <div class="home_summary">
+                <h1>In het kort.</h1>
+                <p>Tijdens de mbo-opleiding software developer leer jij alles over apps en programmeren. Ben jij straks die expert met kennis van C#, PHP en Javascript? Ontwikkel jij apps? Websites? Toepassingssoftware? En media? Als software developer weet je precies wat de klant wil en maak jij zijn of haar dromen waar. Je test de apps totdat ze perfect zijn.</p>
+            </div>
+        </div>
+            
+    </main>
+        
+    <div id="footer"></div>
+
+</body>
+
 </html>
