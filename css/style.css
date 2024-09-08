@@ -1,0 +1,445 @@
+* {
+    line-height: 1.15; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+    list-style-type: none;
+}
+
+@font-face {
+  font-family: windows95;
+  src: url(../fonts/MS\ Sans\ Serif\ 8pt.ttf);
+}
+
+html {
+}
+
+body {
+    margin: 0;
+}
+
+main {
+  background-color: black;
+}
+
+header{
+  padding: 20px;
+  background-color: black;
+  border-bottom: solid 1px #2add5d;
+}
+
+header nav ul li a { 
+  display: block; 
+  padding: 10px 20px; /* adjust padding as needed */ 
+  text-decoration: none; 
+
+  text-decoration: none;
+  font-weight: bold;
+  color: #2add5d; 
+} 
+
+header a {
+  position: relative;
+  font-family: 'Cascadia Code', sans-serif;;
+}
+
+header a:hover::before {
+  content: '> ';
+  position: absolute;
+  left: -0px
+}
+
+header a:hover::after {
+  content: ' <';
+  position: absolute;
+  right: -0px
+}
+
+header nav ul { 
+  list-style: none; 
+  margin: 0; 
+  padding: 0; 
+  margin-left: 50px;
+} 
+   
+header nav ul li { 
+  display: inline-block;
+  margin-left: 10px; 
+  margin-top: 12px
+} 
+
+.wrapper {
+  display: flex;
+}
+
+.wrapper img {
+  max-width: 10%;
+  height: auto;
+  margin-left: 15px;
+  margin-bottom: 15px;
+}
+
+
+.bg-text img {
+  max-width: 40%;
+  height: auto;
+}
+
+.matrix_bg {
+}
+
+.bg-text {
+  position: absolute;
+  top: 43%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+  
+  font-family: Fellix, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 1.5em;
+  color: #2add5d;
+  text-shadow: -2px 0 3px black, 0 2px 3px black, 2px 0 3px black, 0 -2px 3px black;
+}
+
+.home_main {
+  display: flex;
+  padding: 0 200px 50px;
+  padding-top: 100px;
+  margin-top: -4px;
+  border-top: solid 1px #2add5d;
+  background-color: black;
+}
+
+.home_nav {
+  display: flex;
+  margin-right: 150px;
+  padding-right: 20px;
+  margin-top: 30px;
+}
+
+.home_nav p {
+  margin: 0;
+  margin-left: 7px;
+  white-space: nowrap;
+  font-family: 'Cascadia Code', sans-serif;;
+  color: #2add5d;
+}
+
+.home_nav i {
+  margin-top: 7px;
+  text-decoration: none;
+  color: #2add5d;
+}
+
+.home_nav a {
+  text-decoration: none; 
+  position: relative;
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.home_nav a:hover::before {
+  font-family: 'Cascadia Code', sans-serif;
+  color: #2add5d;
+  content: '>> ';
+  position: absolute;
+  left: -25px;
+}
+
+.home_summary {
+  font-family: 'Cascadia Code', sans-serif;
+  margin-bottom: 125px;
+}
+
+.home_summary h1 {
+  color: #2add5d;
+}
+
+.home_summary p {
+  font-family: 'Cascadia Code', sans-serif;
+  font-size: 18px;
+  color: #c4c4c4  ;
+}
+
+/* over ons pagina */
+
+
+/* Over Curio Window */
+.window_overcurio {
+  font-family: 'Cascadia Code', sans-serif;;
+
+  border-width:3px 3px 3px 3px;
+  border-style:solid;
+  border-color: #7c00ac;
+
+  background-color: #540076;
+  color: white;
+
+  margin-bottom: 50px;
+}
+
+.window_overcurio_header {
+  font-family: 'windows95';
+
+  display: flex;
+  justify-content: space-between;
+  margin: 5px;
+  background-color: #2a003a;
+  padding: 7px 7px 7px;
+
+}
+
+.window_overcurio_header img {
+  image-rendering: pixelated;
+  
+  height: 25px;
+  width: auto;
+}
+
+.window_overcurio_header_title {
+  color: #8f66a0;
+  font-size: 1.2rem;
+  display: flex;
+}
+
+.window_overcurio_header_title p {
+  font-weight: 700;
+  margin: 0;
+  margin-left: 5px;
+  margin-top: 3px;
+}
+
+.window_overcurio_content {
+  padding: 15px;
+  margin: 5px;
+  background-color: #1a0025;
+  border: solid 3px #9a00dc;
+}
+
+/* -------------------------------------------------- */
+
+/* Leertraject Window */
+.window_leertraject {
+  font-family: 'Cascadia Code', sans-serif;;
+
+  border-width:3px 3px 3px 3px;
+  border-style:solid;
+  border-color: #ac5600;
+
+  background-color: #763100;
+  color: white;
+
+  margin-bottom: 50px;
+}
+
+.window_leertraject_header {
+  font-family: 'windows95';
+
+  display: flex;
+  justify-content: space-between;
+  margin: 5px;
+  background-color: #3a2300;
+  padding: 7px 7px 7px;
+
+}
+
+.window_leertraject_header img {
+  image-rendering: pixelated;
+  
+  height: 25px;
+  width: auto;
+}
+
+.window_leertraject_header_title {
+  color: #a08266;
+  font-size: 1.2rem;
+  display: flex;
+}
+
+.window_leertraject_header_title p {
+  font-weight: 700;
+  margin: 0;
+  margin-left: 5px;
+  margin-top: 3px;
+}
+
+.window_leertraject_content {
+  padding: 15px;
+  margin: 5px;
+  background-color: #ffffff;
+  border: solid 3px #dc8800;
+}
+
+/* -------------------------------------------- */
+
+.over_curio img {
+  max-width: 50%;
+  height: auto;
+  border: solid 3px #9a00dc;
+}
+
+.over_curio_locaties {
+  
+}
+
+.over_curio_main {
+  padding: 0 200px;
+  border: solid 1px black; /* voor een of andere reden, zit er ruimte tussen de header en de main.
+                                en het gaat weg wanneer ik een border toevoeg*/
+}
+
+.over_curio_locaties img {
+  max-width: 80%;
+  height: auto; 
+}
+
+.over_curio_breda {
+  background-color: #2a003a;
+  border: solid 2px #7c00ac;
+  padding: 15px;
+  margin-bottom: 40px;
+  color: #004c35;
+  font-weight: 700;
+}
+
+.over_curio_roosendaal {
+  justify-content: space-between;
+  padding: 15px;
+  margin-bottom: 40px;
+  color: #004c35;
+  font-weight: 700;
+}
+
+.over_curio_titles h1 {
+  font-weight: 700;
+  font-size: 4rem;
+  color: #004c35;
+}
+
+.docenten {
+  display: flex;
+  margin-bottom: 120px;
+  padding: 40px 40px 0;
+}
+.docenten img {
+  width: 150px;
+  height: auto;
+}
+
+.docenten_column_01 {
+  margin-right: 170px;
+}
+
+.pfp {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.pfp p {
+  margin-left: 30px;
+}
+
+.over_curio_contact {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 150px;
+  font-size: 1rem;
+  padding-bottom: 20px;
+  border-bottom: solid 1px #ffcc00;
+
+}
+
+.footer_adress, .footer_tel{
+  display: flex;
+  margin-bottom: 30px;
+  color: #ffcc00;
+}
+
+.footer_adress a, .footer_tel a{
+  color: #ffcc00;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.footer_adress h1, .footer_tel h1{
+  margin: 0;
+}
+
+/* Leertraject pagina*/
+
+.leertraject_main {
+  color: white;
+  padding: 0 200px;
+  margin-bottom: 150px;
+}
+
+.leertraject_main h2 {
+  color: #004c35;
+}
+
+.leertraject_main_top {
+  display: flex;
+}
+
+.leertraject_main_top p {
+  overflow: hidden;
+  padding-right: 300px;
+}
+
+.leertraject_img img{
+  width: 70%;
+  height: auto;
+}
+
+.leertraject_img {
+  display: flex;
+  justify-content: center;
+}
+
+.leertraject_title {
+  font-weight: 700;
+  font-size: 2rem;
+  color: #004c35;
+}
+
+.leertraject_subtitle{
+
+}
+
+
+.leertraject_text_wrap {
+  margin: 0 0 50px;
+}
+
+.leertraject_text_wrap img {
+  max-width: 70%;
+  height: auto;
+}
+
+/* Lessen Pagina */
+
+.lessen_main {
+  padding: 0 200px;
+  margin-bottom: 150px;
+}
+
+.lessen_rooster_img {
+
+}
+
+.lessen_rooster_img img{
+  max-width: 70%;
+  height: auto;
+}
+
+.footer_contact {
+  position: relative;
+  border-top: solid 2px #2add5d ;
+
+  font-family: 'Cascadia Code', sans-serif;;
+  font-weight: 700;
+  padding: 20px;
+  color: #ffcc00;
+  background-color: black;
+}
