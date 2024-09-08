@@ -9,9 +9,6 @@
   src: url(../fonts/MS\ Sans\ Serif\ 8pt.ttf);
 }
 
-html {
-}
-
 body {
     margin: 0;
 }
@@ -19,6 +16,8 @@ body {
 main {
   background-color: black;
 }
+
+/* ~ Header ~ */
 
 header{
   padding: 20px;
@@ -38,7 +37,7 @@ header nav ul li a {
 
 header a {
   position: relative;
-  font-family: 'Cascadia Code', sans-serif;;
+  font-family: "Source Code Pro", system-ui;
 }
 
 header a:hover::before {
@@ -63,11 +62,11 @@ header nav ul {
 header nav ul li { 
   display: inline-block;
   margin-left: 10px; 
-  margin-top: 12px
 } 
 
 .wrapper {
   display: flex;
+  align-items: center;
 }
 
 .wrapper img {
@@ -77,14 +76,50 @@ header nav ul li {
   margin-bottom: 15px;
 }
 
+.matrix {
+  padding: 0;
+  margin: 0;
+}
+
 
 .bg-text img {
   max-width: 40%;
   height: auto;
 }
 
-.matrix_bg {
+@media all and (max-width: 500px) {
+  header nav ul li a { 
+    display: block; 
+    padding: 10px 50px; /* adjust padding as needed */ 
+    text-decoration: none; 
+  
+    text-decoration: none;
+    font-weight: bold;
+    color: #2add5d; 
+  } 
+
+
+
+  header nav ul { 
+    list-style: none; 
+    margin: 0; 
+    padding: 0; 
+    margin-left: 20%;
+  } 
+
+
+
+  .wrapper img {
+    max-width: 30%;
+    height: auto;
+    margin-left: 15px;
+    margin-bottom: 15px;
+  }
 }
+
+/* ~= Header =~ */
+
+/* INDEX HTML */
 
 .bg-text {
   position: absolute;
@@ -101,54 +136,59 @@ header nav ul li {
   text-shadow: -2px 0 3px black, 0 2px 3px black, 2px 0 3px black, 0 -2px 3px black;
 }
 
+
+
+
 .home_main {
   display: flex;
-  padding: 0 200px 50px;
-  padding-top: 100px;
-  margin-top: -4px;
+  align-items: center;
+  font-family: "Source Code Pro", system-ui;
+  padding: 125px 300px;
   border-top: solid 1px #2add5d;
   background-color: black;
 }
 
+
+
+
 .home_nav {
   display: flex;
+  justify-content: center;
   margin-right: 150px;
   padding-right: 20px;
-  margin-top: 30px;
+  /* margin-top: 30px; */
 }
-
 .home_nav p {
   margin: 0;
   margin-left: 7px;
   white-space: nowrap;
-  font-family: 'Cascadia Code', sans-serif;;
   color: #2add5d;
 }
-
 .home_nav i {
   margin-top: 7px;
   text-decoration: none;
   color: #2add5d;
 }
-
 .home_nav a {
   text-decoration: none; 
   position: relative;
   display: flex;
-  margin-bottom: 50px;
+  margin: 50px 0;
 }
-
 .home_nav a:hover::before {
-  font-family: 'Cascadia Code', sans-serif;
+  font-family: "Source Code Pro", system-ui;
   color: #2add5d;
   content: '>> ';
   position: absolute;
   left: -25px;
 }
 
+
+
+
 .home_summary {
-  font-family: 'Cascadia Code', sans-serif;
-  margin-bottom: 125px;
+  font-family: "Source Code Pro", system-ui;
+  
 }
 
 .home_summary h1 {
@@ -156,22 +196,47 @@ header nav ul li {
 }
 
 .home_summary p {
-  font-family: 'Cascadia Code', sans-serif;
+  font-family: "Source Code Pro", system-ui;
   font-size: 18px;
   color: #c4c4c4  ;
 }
+
+
+
+@media all and (max-width: 500px) {
+  .home_main {
+    display: flex;
+    align-items: center;
+    font-family: "Source Code Pro", system-ui;
+    padding: 125px 20px;
+    border-top: solid 1px #2add5d;
+    background-color: black;
+  }
+
+
+
+
+  .home_nav {
+    display: block;
+    justify-content: center;
+    margin-right: 0;
+    padding-right: 20px;
+    /* margin-top: 30px; */
+  }
+}
+
+/* ~= INDEX HTML =~ */
+
 
 /* over ons pagina */
 
 
 /* Over Curio Window */
 .window_overcurio {
-  font-family: 'Cascadia Code', sans-serif;;
-
   border-width:3px 3px 3px 3px;
   border-style:solid;
   border-color: #7c00ac;
-
+  
   background-color: #540076;
   color: white;
 
@@ -179,8 +244,7 @@ header nav ul li {
 }
 
 .window_overcurio_header {
-  font-family: 'windows95';
-
+  font-family: 'windows95', system-ui;
   display: flex;
   justify-content: space-between;
   margin: 5px;
@@ -191,7 +255,6 @@ header nav ul li {
 
 .window_overcurio_header img {
   image-rendering: pixelated;
-  
   height: 25px;
   width: auto;
 }
@@ -210,17 +273,29 @@ header nav ul li {
 }
 
 .window_overcurio_content {
+  font-family: "Source Code Pro", system-ui;
+  /* font-family: 'windows95', system-ui; */
+
   padding: 15px;
   margin: 5px;
   background-color: #1a0025;
   border: solid 3px #9a00dc;
 }
 
+
+
+@media all and (max-width: 500px) {
+
+}
+
+
+/* ~= Over Curio Window =~ */
+
 /* -------------------------------------------------- */
 
 /* Leertraject Window */
 .window_leertraject {
-  font-family: 'Cascadia Code', sans-serif;;
+  font-family: "Source Code Pro", system-ui;
 
   border-width:3px 3px 3px 3px;
   border-style:solid;
@@ -233,8 +308,6 @@ header nav ul li {
 }
 
 .window_leertraject_header {
-  font-family: 'windows95';
-
   display: flex;
   justify-content: space-between;
   margin: 5px;
@@ -278,12 +351,8 @@ header nav ul li {
   border: solid 3px #9a00dc;
 }
 
-.over_curio_locaties {
-  
-}
-
 .over_curio_main {
-  padding: 0 200px;
+  padding: 100px 200px;
   border: solid 1px black; /* voor een of andere reden, zit er ruimte tussen de header en de main.
                                 en het gaat weg wanneer ik een border toevoeg*/
 }
@@ -318,16 +387,18 @@ header nav ul li {
 
 .docenten {
   display: flex;
-  margin-bottom: 120px;
+  justify-content: space-between;
+  margin:50px 150px 120px;
   padding: 40px 40px 0;
 }
+
 .docenten img {
   width: 150px;
   height: auto;
 }
 
 .docenten_column_01 {
-  margin-right: 170px;
+  margin-right: 0;
 }
 
 .pfp {
@@ -350,6 +421,45 @@ header nav ul li {
 
 }
 
+
+
+
+@media all and (max-width: 500px) {
+  .over_curio_main {
+    padding: 20px 20px;
+    border: solid 1px black; /* voor een of andere reden, zit er ruimte tussen de header en de main.
+                                  en het gaat weg wanneer ik een border toevoeg*/
+  }
+
+
+
+
+  .docenten {
+    display: block;
+    justify-content: space-between;
+    margin:50px 20px 120px;
+    padding: 40px 40px 0;
+  }
+
+  .docenten img {
+    width: 100px;
+    height: auto;
+  }
+
+
+
+
+  .pfp {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+}
+
+
+
+
+
 .footer_adress, .footer_tel{
   display: flex;
   margin-bottom: 30px;
@@ -366,30 +476,33 @@ header nav ul li {
   margin: 0;
 }
 
-/* Leertraject pagina*/
+/* Leertraject pagina */
 
 .leertraject_main {
   color: white;
-  padding: 0 200px;
-  margin-bottom: 150px;
+  padding: 0 400px;
+  padding-bottom: 150px;
+  padding-top: 50px;
+
+  font-family: "Source Code Pro", system-ui;
+
 }
 
-.leertraject_main h2 {
-  color: #004c35;
-}
 
 .leertraject_main_top {
   display: flex;
+  justify-content: space-between;
 }
 
 .leertraject_main_top p {
   overflow: hidden;
-  padding-right: 300px;
+  right: 100%;
 }
 
 .leertraject_img img{
   width: 70%;
   height: auto;
+  background-color: white;
 }
 
 .leertraject_img {
@@ -397,16 +510,10 @@ header nav ul li {
   justify-content: center;
 }
 
-.leertraject_title {
+.title {
   font-weight: 700;
   font-size: 2rem;
-  color: #004c35;
 }
-
-.leertraject_subtitle{
-
-}
-
 
 .leertraject_text_wrap {
   margin: 0 0 50px;
@@ -417,29 +524,91 @@ header nav ul li {
   height: auto;
 }
 
+@media all and (max-width: 500px) {
+  .leertraject_main {
+    color: white;
+    padding: 0 30px;
+    padding-bottom: 150px;
+    padding-top: 50px;
+  
+    font-family: "Source Code Pro", system-ui;
+  }
+
+  .leertraject_main h3 {
+    font-size: 1rem;
+  }
+
+  .title {
+    font-weight: 700;
+    font-size: 1rem;
+  }
+
+  
+}
+
+
+/* ~= Leertraject pagina =~ */
+
 /* Lessen Pagina */
 
 .lessen_main {
-  padding: 0 200px;
-  margin-bottom: 150px;
-}
-
-.lessen_rooster_img {
-
+  padding: 50px 400px;
+  color: white;
+  font-family: "Source Code Pro", system-ui;
 }
 
 .lessen_rooster_img img{
-  max-width: 70%;
+  max-width: 60%;
   height: auto;
 }
+
+@media all and (max-width: 500px) {
+  .lessen_main {
+    padding: 50px 30px;
+    color: white;
+    font-family: "Source Code Pro", system-ui;
+  }
+}
+
+
+
 
 .footer_contact {
   position: relative;
   border-top: solid 2px #2add5d ;
 
-  font-family: 'Cascadia Code', sans-serif;;
+  font-family: "Source Code Pro", system-ui;
+
   font-weight: 700;
   padding: 20px;
   color: #ffcc00;
   background-color: black;
+}
+
+@media all and (max-width: 500px) {
+  .footer_contact {
+    position: relative;
+    border-top: solid 2px #2add5d ;
+  
+    font-family: "Source Code Pro", system-ui;
+  
+    font-weight: 700;
+    padding: 20px 40px;
+    color: #ffcc00;
+    background-color: black;
+    margin: 0;
+  }
+  
+  
+  
+  
+  .over_curio_contact {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    font-size: .5rem;
+    padding-bottom: 20px;
+    border-bottom: solid 1px #ffcc00;
+  
+  }
 }
